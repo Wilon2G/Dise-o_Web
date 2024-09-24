@@ -1,0 +1,186 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: aliceblue;
+}
+
+.header {
+  height: 85vh;
+  background-image: linear-gradient(0deg, rgba(6, 15, 6, 0.8379726891) 0%, rgba(33, 182, 27, 0.4766281513) 100%), url("../media/froggo_header.jpg");
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 93%, 0% 100%);
+  position: relative;
+}
+
+.header__logo-box {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  border-radius: 2rem;
+  transition: all 1s;
+  height: 7.5rem;
+}
+
+.header__logo {
+  height: 7rem;
+}
+
+.header__logo-box:hover {
+  background-color: antiquewhite;
+  border-radius: 2rem;
+}
+
+.header__titulo {
+  display: block;
+  font-weight: 700;
+  letter-spacing: 3.5rem;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header__main-title {
+  font-size: 7rem;
+  display: block;
+  animation-name: moveup;
+  animation-duration: 3s;
+}
+
+.header__subtitle {
+  font-size: 3.5rem;
+  display: block;
+  animation-name: moveleft;
+  animation-duration: 5s;
+}
+
+@keyframes moveup {
+  0% {
+    opacity: 0;
+    transform: translateY(-10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes moveleft {
+  0% {
+    opacity: 0;
+    transform: translateX(20rem);
+  }
+  65% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes moveInButon {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.froggo_advantages > div {
+  margin: 5%;
+  width: 20%;
+  background-color: rgb(212, 131, 73);
+  border-radius: 1.6rem;
+  font-size: 1.5rem;
+}
+
+.froggo_advantages > div > h3 {
+  border-radius: 1.6rem;
+  padding: 5%;
+  font-size: 3rem;
+  background-color: rgb(121, 228, 192);
+  border: 0.3rem solid burlywood;
+}
+
+.froggo_advantages > div > p {
+  padding: 5%;
+}
+
+.froggo_advantages {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  position: relative;
+}
+
+.btn:link,
+.btn:visited {
+  letter-spacing: normal;
+  border-radius: 1.5rem;
+  padding: 1.4rem;
+  position: absolute;
+  top: 120%;
+  text-decoration: none;
+  transition: all 0.5s;
+  font-size: 1.5rem;
+}
+
+.btn--animado {
+  animation: moveInButon 1.5s ease-out 2s;
+  animation-fill-mode: backwards;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.4);
+}
+
+.btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.4);
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 1.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: darkolivegreen;
+  transition: 1s;
+}
+
+.btn:hover::after {
+  transform: scale(2);
+  transform: scaleX(1.5) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn--g {
+  background-color: darkolivegreen;
+  color: antiquewhite;
+}
+
+/*# sourceMappingURL=estilos.css.map */
