@@ -1,3 +1,7 @@
+@import "layout/grid";
+
+
+
 *,
 *::after,
 *::before {
@@ -28,6 +32,7 @@ body {
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 93%, 0% 100%);
   position: relative;
+  text-align: center;
 }
 .header__logo-box {
   position: absolute;

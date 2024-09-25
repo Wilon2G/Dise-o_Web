@@ -1,9 +1,1 @@
-{
-"scripts": {
-  "compile:sass":"sass --watch sass/main.scss css/estilos.css"
-},
-"dependencies":{},
-  "devDependencies": {
-    "sass": "^1.79.3"
-  }
-}
+{"scripts":{"compile:sass":"sass --watch sass/main.scss css/estilos.css"},"devDependencies":{"sass":"^1.79.3"}}

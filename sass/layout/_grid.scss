@@ -1,0 +1,5 @@
+.row {
+    max-width: 114rem; // different than width
+    background-color: #e26161;
+    margin: 0 auto; // trick to center block element inside of another block elements. auto value results in a margin of the same size left and right
+}
